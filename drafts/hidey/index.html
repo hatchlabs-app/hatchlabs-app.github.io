@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hidey</title>
+    <meta
+      name="description"
+      content="Hideyは、子どもの写真や家族の写真を安心して共有しやすくするためのアプリです。"
+    />
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body class="hidey-body">
+    <header class="site-header site-header-soft">
+      <a class="brand brand-hidey" href="../../drafts/hidey/">
+        <img class="brand-hidey-image" src="../../assets/Hidey-5.png" alt="Hidey" />
+      </a>
+      <nav class="site-nav" aria-label="主要リンク">
+        <a href="#benefits">特長</a>
+        <a href="#details">機能</a>
+        <a href="#contact">お問い合わせ</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero hero-soft">
+        <div class="hero-copy">
+          <p class="eyebrow eyebrow-soft">Coming Soon</p>
+          <h1>その写真、送りたい。でも少しだけ不安。</h1>
+          <p class="lead">
+            Hidey は、子どもの写真や家族の思い出をもっと安心して共有するためのアプリです。
+            顔や名前、ナンバープレートなどを手早く整えて、送りたい気持ちを止めにくくします。
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary-soft" href="#release">公開案内を見る</a>
+            <a class="button button-secondary-soft" href="mailto:hatchlabs.app+hidey@gmail.com">お問い合わせ</a>
+          </div>
+          <ul class="hero-points">
+            <li>子どもの写真を共有する前に整えやすい</li>
+            <li>背景の情報にも気を配りやすい</li>
+            <li>見た目を壊しすぎない自然なマスク</li>
+          </ul>
+        </div>
+        <div class="device-preview" aria-label="Hideyのイメージ">
+          <div class="device-stack">
+            <div class="device-frame device-frame-front">
+              <div class="device-screen" data-slider-root style="--slider-position: 52%">
+                <div class="screen-image-shell">
+                  <div class="screen-image-fallback">Before</div>
+                  <img
+                    class="screen-image screen-image-before"
+                    src="../../assets/hidey-before.png"
+                    alt="Hideyで加工する前の画面"
+                    onerror="this.style.display='none'"
+                  />
+                </div>
+                <div class="screen-after">
+                  <div class="screen-image-fallback screen-image-fallback-soft">After</div>
+                  <img
+                    class="screen-image screen-image-after"
+                    src="../../assets/hidey-after.png"
+                    alt="Hideyで加工した後の画面"
+                    onerror="this.style.display='none'"
+                  />
+                </div>
+                <div
+                  class="screen-slider"
+                  data-slider-hit
+                  role="slider"
+                  aria-label="BeforeとAfterの比較"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  aria-valuenow="52"
+                  tabindex="0"
+                >
+                  <div class="slider-line"></div>
+                  <div class="slider-handle">
+                    <span class="slider-arrow slider-arrow-left"></span>
+                    <span class="slider-arrow slider-arrow-right"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="benefits">
+        <div class="section-heading">
+          <p class="eyebrow eyebrow-soft">Preview</p>
+          <h2>Hideyで整えるイメージ</h2>
+        </div>
+        <div class="compare-grid">
+          <article class="compare-card">
+            <div class="compare-head">
+              <span class="compare-tag">Before</span>
+              <h3>共有前に気になること</h3>
+            </div>
+            <div class="compare-preview compare-preview-before" aria-hidden="true">
+              <div class="compare-image-shell">
+                <div class="compare-image-fallback">Before</div>
+                <img
+                  class="compare-image"
+                  src="../../assets/before.png"
+                  alt="加工前の成果物"
+                  onerror="this.style.display='none'"
+                />
+              </div>
+            </div>
+            <p>顔や名前、背景の情報がそのまま見えていて、このまま送ってよいか迷う状態です。</p>
+          </article>
+          <article class="compare-card">
+            <div class="compare-head">
+              <span class="compare-tag compare-tag-soft">After</span>
+              <h3>Hideyで整えたあと</h3>
+            </div>
+            <div class="compare-preview compare-preview-after" aria-hidden="true">
+              <div class="compare-image-shell">
+                <div class="compare-image-fallback compare-image-fallback-soft">After</div>
+                <img
+                  class="compare-image"
+                  src="../../assets/after.jpg"
+                  alt="加工後の成果物"
+                  onerror="this.style.display='none'"
+                />
+              </div>
+            </div>
+            <p>必要な部分だけをやわらかく整えて、共有しやすい見た目に近づけます。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="details">
+        <div class="section-heading">
+          <p class="eyebrow eyebrow-soft">Details</p>
+          <h2>主な機能</h2>
+        </div>
+        <div class="detail-stack">
+          <article class="detail-card">
+            <div class="detail-copy">
+              <h3>顔や名前など、気になる情報を見つけて整える</h3>
+              <p>顔、名前、ナンバープレートなど、共有前に気になる情報を短時間で整えやすくします。</p>
+            </div>
+            <div class="detail-art detail-art-blue" aria-hidden="true">
+              <div class="mini-ui mini-ui-grid">
+                <div class="mini-thumb"></div>
+                <div class="mini-thumb"></div>
+                <div class="mini-thumb"></div>
+                <div class="mini-thumb"></div>
+              </div>
+            </div>
+          </article>
+          <article class="detail-card detail-card-reverse">
+            <div class="detail-copy">
+              <h3>端末内での処理を前提に設計</h3>
+              <p>写真の扱いに配慮しやすいよう、オンデバイスで完結する体験を目指して開発を進めています。</p>
+            </div>
+            <div class="detail-art detail-art-pink" aria-hidden="true">
+              <div class="mini-ui mini-ui-lock">
+                <div class="lock-ring"></div>
+                <div class="lock-body"></div>
+              </div>
+            </div>
+          </article>
+          <article class="detail-card">
+            <div class="detail-copy">
+              <h3>写真の雰囲気を残しやすいマスク表現</h3>
+              <p>ただ消すだけではなく、共有したときの見た目を損ねにくい、やわらかいマスクデザインを目指しています。</p>
+            </div>
+            <div class="detail-art detail-art-yellow" aria-hidden="true">
+              <div class="mini-ui mini-ui-masks">
+                <div class="mini-mask mini-mask-pink"></div>
+                <div class="mini-mask mini-mask-yellow"></div>
+                <div class="mini-mask mini-mask-blue"></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-soft section-note" id="release">
+        <div class="release-note">
+          <span class="tag tag-soft">近日公開</span>
+          <h2>リリース準備中です</h2>
+          <p>
+            App Store 公開に向けて準備を進めています。公開時期や詳細情報は、このページで順次お知らせします。
+            お問い合わせは
+            <a href="mailto:hatchlabs.app+hidey@gmail.com">hatchlabs.app+hidey@gmail.com</a>
+            までお願いします。
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="contact">
+        <div class="section-heading">
+          <p class="eyebrow eyebrow-soft">Contact</p>
+          <h2>お問い合わせ</h2>
+        </div>
+        <p class="contact-copy">
+          Hidey に関するお問い合わせは、
+          <a href="mailto:hatchlabs.app+hidey@gmail.com">hatchlabs.app+hidey@gmail.com</a>
+          までお願いします。
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer site-footer-soft">
+      <p>© Hatch Labs</p>
+      <div class="footer-links">
+        <a href="../../privacy/">プライバシーポリシー</a>
+        <a href="../../legal/">特定商取引法に基づく表記</a>
+      </div>
+    </footer>
+    <script>
+      (() => {
+        const root = document.querySelector("[data-slider-root]");
+        const slider = document.querySelector("[data-slider-hit]");
+        if (!root || !slider) return;
+
+        const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
+        const setPosition = (percent) => {
+          const bounded = clamp(percent, 0, 100);
+          root.style.setProperty("--slider-position", `${bounded}%`);
+          slider.setAttribute("aria-valuenow", String(Math.round(bounded)));
+        };
+
+        const updateFromClientX = (clientX) => {
+          const rect = root.getBoundingClientRect();
+          const percent = ((clientX - rect.left) / rect.width) * 100;
+          setPosition(percent);
+        };
+
+        let dragging = false;
+
+        slider.addEventListener("pointerdown", (event) => {
+          dragging = true;
+          slider.setPointerCapture(event.pointerId);
+          updateFromClientX(event.clientX);
+        });
+
+        slider.addEventListener("pointermove", (event) => {
+          if (!dragging) return;
+          updateFromClientX(event.clientX);
+        });
+
+        const stopDragging = (event) => {
+          if (!dragging) return;
+          dragging = false;
+          if (event.pointerId !== undefined) {
+            slider.releasePointerCapture(event.pointerId);
+          }
+        };
+
+        slider.addEventListener("pointerup", stopDragging);
+        slider.addEventListener("pointercancel", stopDragging);
+        slider.addEventListener("keydown", (event) => {
+          const current = Number(slider.getAttribute("aria-valuenow") || "52");
+          if (event.key === "ArrowLeft") {
+            event.preventDefault();
+            setPosition(current - 5);
+          }
+          if (event.key === "ArrowRight") {
+            event.preventDefault();
+            setPosition(current + 5);
+          }
+          if (event.key === "Home") {
+            event.preventDefault();
+            setPosition(0);
+          }
+          if (event.key === "End") {
+            event.preventDefault();
+            setPosition(100);
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>
