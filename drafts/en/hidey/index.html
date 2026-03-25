@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hidey</title>
+    <meta
+      name="description"
+      content="Hidey helps you share family photos with more peace of mind. Quickly hide faces, names, license plates, and other details you would rather keep private."
+    />
+    <link rel="stylesheet" href="../../../styles.css" />
+  </head>
+  <body class="hidey-body">
+    <header class="site-header site-header-soft">
+      <a class="brand brand-hidey" href="../../../drafts/en/hidey/">
+        <img class="brand-hidey-image" src="../../../assets/Hidey.svg" alt="Hidey" />
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#benefits" data-scroll-link>Benefits</a>
+        <a href="#details" data-scroll-link>Features</a>
+        <a href="#contact" data-scroll-link>Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero hero-soft">
+        <div class="hero-copy">
+          <p class="eyebrow eyebrow-soft">Coming Soon</p>
+          <h1>Hide it fast.<br />Keep it gentle.</h1>
+          <p class="lead">
+            Hidey helps you share family photos with more peace of mind. Quickly hide faces, names,
+            license plates, and other details you would rather keep private.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary-soft" href="#release" data-scroll-link>See what’s coming</a>
+            <a class="button button-secondary-soft" href="#contact" data-scroll-link>Contact</a>
+          </div>
+          <ul class="hero-points">
+            <li><span class="hero-point-label">Point 1</span><span class="hero-point-text">Detect and hide faces automatically</span></li>
+            <li><span class="hero-point-label">Point 2</span><span class="hero-point-text">Processing stays on your iPhone</span></li>
+            <li><span class="hero-point-label">Point 3</span><span class="hero-point-text">Hide license plates and names too</span></li>
+          </ul>
+        </div>
+        <div class="device-preview" aria-label="Hidey preview">
+          <div class="device-stack">
+            <div class="device-frame device-frame-front">
+              <div class="device-screen" data-slider-root style="--slider-position: 52%">
+                <div class="screen-image-shell">
+                  <img
+                    class="screen-image screen-image-before"
+                    src="../../../assets/hidey-before-en.PNG"
+                    alt="Preview before editing in Hidey"
+                    onerror="this.style.display='none'"
+                  />
+                </div>
+                <div class="screen-after">
+                  <img
+                    class="screen-image screen-image-after"
+                    src="../../../assets/hidey-after-en.PNG"
+                    alt="Preview after editing in Hidey"
+                    onerror="this.style.display='none'"
+                  />
+                </div>
+                <div
+                  class="screen-slider"
+                  data-slider-hit
+                  role="slider"
+                  aria-label="Before and after comparison"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  aria-valuenow="52"
+                  tabindex="0"
+                >
+                  <div class="slider-line"></div>
+                  <div class="slider-handle">
+                    <span class="slider-arrow slider-arrow-left"></span>
+                    <span class="slider-arrow slider-arrow-right"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="benefits">
+        <div class="section-heading">
+          <p class="eyebrow eyebrow-soft">Preview</p>
+          <h2>What Hidey helps protect</h2>
+        </div>
+        <div class="compare-grid">
+          <article class="compare-card">
+            <div class="compare-head">
+              <span class="compare-tag">Before</span>
+              <h3>Details you may not want to share</h3>
+            </div>
+            <div class="compare-preview compare-preview-before" aria-hidden="true">
+              <div class="compare-image-shell">
+                <div class="compare-image-fallback">Before</div>
+                <img
+                  class="compare-image"
+                  src="../../../assets/before-en.PNG"
+                  alt="Example image before editing"
+                  onerror="this.style.display='none'"
+                />
+              </div>
+            </div>
+            <p>
+              Faces, names, and background details may still be visible, making it hard to decide
+              whether the photo is ready to share.
+            </p>
+          </article>
+          <article class="compare-card">
+            <div class="compare-head">
+              <span class="compare-tag compare-tag-soft">After</span>
+              <h3>Hide sensitive details in one tap</h3>
+            </div>
+            <div class="compare-preview compare-preview-after" aria-hidden="true">
+              <div class="compare-image-shell">
+                <div class="compare-image-fallback compare-image-fallback-soft">After</div>
+                <img
+                  class="compare-image"
+                  src="../../../assets/after-en.JPG"
+                  alt="Example image after editing"
+                  onerror="this.style.display='none'"
+                />
+              </div>
+            </div>
+            <p>
+              Hide only what matters and keep the overall feel of the photo more natural for
+              sharing.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="details">
+        <div class="section-heading">
+          <p class="eyebrow eyebrow-soft">Details</p>
+          <h2>Key features</h2>
+        </div>
+        <div class="detail-stack">
+          <article class="detail-card">
+            <div class="detail-copy">
+              <h3>Detect details before you share</h3>
+              <p>
+                Quickly cover faces, names, license plates, and other details you notice before
+                sharing a photo.
+              </p>
+            </div>
+            <div class="detail-art detail-art-blue" aria-hidden="true">
+              <div class="mini-ui mini-ui-grid">
+                <div class="mini-thumb"></div>
+                <div class="mini-thumb"></div>
+                <div class="mini-thumb"></div>
+                <div class="mini-thumb"></div>
+              </div>
+            </div>
+          </article>
+          <article class="detail-card detail-card-reverse">
+            <div class="detail-copy">
+              <h3>On-device processing</h3>
+              <p>Your photo is processed on your iPhone, so sensitive information stays on your device.</p>
+            </div>
+            <div class="detail-art detail-art-pink" aria-hidden="true">
+              <div class="mini-ui mini-ui-lock">
+                <div class="lock-ring"></div>
+                <div class="lock-body"></div>
+              </div>
+            </div>
+          </article>
+          <article class="detail-card">
+            <div class="detail-copy">
+              <h3>Stickers that blend naturally into your photo</h3>
+              <p>
+                Instead of simply blocking things out, Hidey aims for a softer mask style that fits
+                the look of the photo more naturally.
+              </p>
+            </div>
+            <div class="detail-art detail-art-yellow" aria-hidden="true">
+              <div class="mini-ui mini-ui-masks">
+                <div class="mini-mask mini-mask-pink"></div>
+                <div class="mini-mask mini-mask-yellow"></div>
+                <div class="mini-mask mini-mask-blue"></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-soft section-note" id="release">
+        <div class="release-note">
+          <span class="tag tag-soft">Coming Soon</span>
+          <h2>Preparing for release</h2>
+          <p>
+            We are getting Hidey ready for release on the App Store. Updates about timing and
+            product details will be shared on this page.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="contact">
+        <div class="section-heading">
+          <p class="eyebrow eyebrow-soft">Contact</p>
+          <h2>Get in touch</h2>
+        </div>
+        <div class="contact-panel" data-contact-root data-email="hidey@hatchlaboratories.com">
+          <div class="contact-panel-copy">
+            <p class="contact-copy">
+              Choose the option that fits your message. We will prepare an email draft you can edit
+              before sending.
+            </p>
+            <p class="contact-meta">
+              Send to:
+              <a href="mailto:hidey@hatchlaboratories.com">hidey@hatchlaboratories.com</a>
+            </p>
+          </div>
+          <div class="contact-type-group" role="tablist" aria-label="Contact type">
+            <button
+              class="contact-type-button is-active"
+              type="button"
+              data-contact-type="request"
+              aria-pressed="true"
+            >
+              Feature Request
+            </button>
+            <button
+              class="contact-type-button"
+              type="button"
+              data-contact-type="other"
+              aria-pressed="false"
+            >
+              Other
+            </button>
+          </div>
+          <div class="contact-fields">
+            <label class="contact-field">
+              <span>Subject</span>
+              <input class="contact-input" type="text" data-contact-subject readonly />
+            </label>
+            <label class="contact-field">
+              <span>Message</span>
+              <textarea class="contact-textarea" data-contact-body rows="8"></textarea>
+            </label>
+          </div>
+          <div class="contact-actions">
+            <a class="button button-primary-soft" href="#" data-contact-mailto>Open Mail</a>
+            <a class="button button-secondary-soft" href="#" target="_blank" rel="noreferrer" data-contact-gmail>
+              Open Gmail
+            </a>
+            <a
+              class="contact-social-link"
+              href="https://x.com/Hidey524304"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Contact Hidey on X"
+            >
+              Contact on
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M18.9 2H22l-6.77 7.74L23 22h-6.1l-4.78-7.43L5.62 22H2.5l7.23-8.27L2 2h6.25l4.32 6.73L18.9 2Zm-1.07 18h1.69L7.33 3.9H5.52Z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <p class="contact-status" data-contact-status aria-live="polite"></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer site-footer-soft">
+      <p>© Hatch Labs</p>
+      <div class="footer-links">
+        <a href="../privacy/">Privacy Policy</a>
+        <a href="../legal/">Legal Notice</a>
+      </div>
+    </footer>
+    <script>
+      (() => {
+        const scrollLinks = document.querySelectorAll("[data-scroll-link]");
+        scrollLinks.forEach((link) => {
+          link.addEventListener("click", (event) => {
+            const href = link.getAttribute("href");
+            if (!href || !href.startsWith("#")) return;
+            const target = document.querySelector(href);
+            if (!target) return;
+            event.preventDefault();
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+          });
+        });
+      })();
+
+      (() => {
+        const root = document.querySelector("[data-slider-root]");
+        const slider = document.querySelector("[data-slider-hit]");
+        if (!root || !slider) return;
+
+        const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
+        const setPosition = (percent) => {
+          const bounded = clamp(percent, 0, 100);
+          root.style.setProperty("--slider-position", `${bounded}%`);
+          slider.setAttribute("aria-valuenow", String(Math.round(bounded)));
+        };
+
+        const updateFromClientX = (clientX) => {
+          const rect = root.getBoundingClientRect();
+          const percent = ((clientX - rect.left) / rect.width) * 100;
+          setPosition(percent);
+        };
+
+        let dragging = false;
+
+        slider.addEventListener("pointerdown", (event) => {
+          dragging = true;
+          slider.setPointerCapture(event.pointerId);
+          updateFromClientX(event.clientX);
+        });
+
+        slider.addEventListener("pointermove", (event) => {
+          if (!dragging) return;
+          updateFromClientX(event.clientX);
+        });
+
+        const stopDragging = (event) => {
+          if (!dragging) return;
+          dragging = false;
+          if (event.pointerId !== undefined) {
+            slider.releasePointerCapture(event.pointerId);
+          }
+        };
+
+        slider.addEventListener("pointerup", stopDragging);
+        slider.addEventListener("pointercancel", stopDragging);
+        slider.addEventListener("keydown", (event) => {
+          const current = Number(slider.getAttribute("aria-valuenow") || "52");
+          if (event.key === "ArrowLeft") {
+            event.preventDefault();
+            setPosition(current - 5);
+          }
+          if (event.key === "ArrowRight") {
+            event.preventDefault();
+            setPosition(current + 5);
+          }
+          if (event.key === "Home") {
+            event.preventDefault();
+            setPosition(0);
+          }
+          if (event.key === "End") {
+            event.preventDefault();
+            setPosition(100);
+          }
+        });
+      })();
+
+      (() => {
+        const root = document.querySelector("[data-contact-root]");
+        if (!root) return;
+
+        const email = root.getAttribute("data-email") || "";
+        const subjectField = root.querySelector("[data-contact-subject]");
+        const bodyField = root.querySelector("[data-contact-body]");
+        const status = root.querySelector("[data-contact-status]");
+        const mailtoLink = root.querySelector("[data-contact-mailto]");
+        const gmailLink = root.querySelector("[data-contact-gmail]");
+        const typeButtons = Array.from(root.querySelectorAll("[data-contact-type]"));
+
+        const templates = {
+          request: {
+            subject: "Feature request for Hidey",
+            body: [
+              "Hi Hidey team,",
+              "",
+              "I have a request for Hidey.",
+              "",
+              "Request:",
+              "",
+              "When I would use it:",
+              "",
+              "Why it would help:",
+              ""
+            ].join("\n")
+          },
+          other: {
+            subject: "Question about Hidey",
+            body: [
+              "Hi Hidey team,",
+              "",
+              "I have a question about Hidey.",
+              "",
+              "Message:",
+              "",
+              "If you would like a reply, please let us know.",
+              ""
+            ].join("\n")
+          }
+        };
+
+        let currentType = "request";
+
+        const setStatus = (message) => {
+          if (!status) return;
+          status.textContent = message;
+        };
+
+        const updateLinks = () => {
+          const subject = subjectField.value;
+          const body = bodyField.value;
+          const mailto = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+          const gmail = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+          mailtoLink.setAttribute("href", mailto);
+          gmailLink.setAttribute("href", gmail);
+        };
+
+        const applyTemplate = (type) => {
+          currentType = type;
+          const template = templates[type];
+          subjectField.value = template.subject;
+          bodyField.value = template.body;
+          typeButtons.forEach((button) => {
+            const active = button.getAttribute("data-contact-type") === type;
+            button.classList.toggle("is-active", active);
+            button.setAttribute("aria-pressed", String(active));
+          });
+          updateLinks();
+          setStatus("");
+        };
+
+        typeButtons.forEach((button) => {
+          button.addEventListener("click", () => applyTemplate(button.getAttribute("data-contact-type")));
+        });
+
+        bodyField.addEventListener("input", updateLinks);
+
+        applyTemplate(currentType);
+      })();
+    </script>
+  </body>
+</html>

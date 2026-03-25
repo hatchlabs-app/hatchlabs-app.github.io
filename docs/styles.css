@@ -578,6 +578,11 @@ a {
   max-width: none;
 }
 
+.screen-after .screen-image-fallback {
+  left: calc(var(--slider-position, 52%) + 14px);
+}
+
+
 .screen-slider {
   position: absolute;
   inset: 0;

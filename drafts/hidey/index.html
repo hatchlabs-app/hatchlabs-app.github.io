@@ -13,12 +13,12 @@
   <body class="hidey-body">
     <header class="site-header site-header-soft">
       <a class="brand brand-hidey" href="../../drafts/hidey/">
-        <img class="brand-hidey-image" src="../../assets/Hidey-5.png" alt="Hidey" />
+        <img class="brand-hidey-image" src="../../assets/Hidey.svg" alt="Hidey" />
       </a>
       <nav class="site-nav" aria-label="主要リンク">
-        <a href="#benefits">特長</a>
-        <a href="#details">機能</a>
-        <a href="#contact">お問い合わせ</a>
+        <a href="#benefits" data-scroll-link>特長</a>
+        <a href="#details" data-scroll-link>機能</a>
+        <a href="#contact" data-scroll-link>お問い合わせ</a>
       </nav>
     </header>
 
@@ -26,19 +26,19 @@
       <section class="hero hero-soft">
         <div class="hero-copy">
           <p class="eyebrow eyebrow-soft">Coming Soon</p>
-          <h1>その写真、送りたい。でも少しだけ不安。</h1>
+          <h1>すぐ隠せる。<br>やさしく隠す。</h1>
           <p class="lead">
-            Hidey は、子どもの写真や家族の思い出をもっと安心して共有するためのアプリです。
-            顔や名前、ナンバープレートなどを手早く整えて、送りたい気持ちを止めにくくします。
+            Hidey は、子どもの写真や家族の思い出を安心してシェアするための、画像編集アプリです。
+            顔や名前、ナンバープレートなどを手早く隠して、楽しい思い出を守ります。
           </p>
           <div class="hero-actions">
-            <a class="button button-primary-soft" href="#release">公開案内を見る</a>
-            <a class="button button-secondary-soft" href="mailto:hatchlabs.app+hidey@gmail.com">お問い合わせ</a>
+            <a class="button button-primary-soft" href="#release" data-scroll-link>公開案内を見る</a>
+            <a class="button button-secondary-soft" href="#contact" data-scroll-link>お問い合わせ</a>
           </div>
           <ul class="hero-points">
-            <li>子どもの写真を共有する前に整えやすい</li>
-            <li>背景の情報にも気を配りやすい</li>
-            <li>見た目を壊しすぎない自然なマスク</li>
+            <li><span class="hero-point-label">ポイント 1</span><span class="hero-point-text">顔を認識して自動で隠す</span></li>
+            <li><span class="hero-point-label">ポイント 2</span><span class="hero-point-text">iPhone上で処理が完結</span></li>
+            <li><span class="hero-point-label">ポイント 3</span><span class="hero-point-text">ナンバープレートや名前も隠せる</span></li>
           </ul>
         </div>
         <div class="device-preview" aria-label="Hideyのイメージ">
@@ -46,7 +46,6 @@
             <div class="device-frame device-frame-front">
               <div class="device-screen" data-slider-root style="--slider-position: 52%">
                 <div class="screen-image-shell">
-                  <div class="screen-image-fallback">Before</div>
                   <img
                     class="screen-image screen-image-before"
                     src="../../assets/hidey-before.png"
@@ -55,7 +54,6 @@
                   />
                 </div>
                 <div class="screen-after">
-                  <div class="screen-image-fallback screen-image-fallback-soft">After</div>
                   <img
                     class="screen-image screen-image-after"
                     src="../../assets/hidey-after.png"
@@ -88,13 +86,13 @@
       <section class="section section-soft" id="benefits">
         <div class="section-heading">
           <p class="eyebrow eyebrow-soft">Preview</p>
-          <h2>Hideyで整えるイメージ</h2>
+          <h2>Hideyで隠すイメージ</h2>
         </div>
         <div class="compare-grid">
           <article class="compare-card">
             <div class="compare-head">
               <span class="compare-tag">Before</span>
-              <h3>共有前に気になること</h3>
+              <h3>シェアする前に気になること</h3>
             </div>
             <div class="compare-preview compare-preview-before" aria-hidden="true">
               <div class="compare-image-shell">
@@ -112,7 +110,7 @@
           <article class="compare-card">
             <div class="compare-head">
               <span class="compare-tag compare-tag-soft">After</span>
-              <h3>Hideyで整えたあと</h3>
+              <h3>Hideyでワンタップ処理</h3>
             </div>
             <div class="compare-preview compare-preview-after" aria-hidden="true">
               <div class="compare-image-shell">
@@ -138,8 +136,8 @@
         <div class="detail-stack">
           <article class="detail-card">
             <div class="detail-copy">
-              <h3>顔や名前など、気になる情報を見つけて整える</h3>
-              <p>顔、名前、ナンバープレートなど、共有前に気になる情報を短時間で整えやすくします。</p>
+              <h3>気になる情報を見つけて隠す</h3>
+              <p>顔、名前、ナンバープレートなど、シェアする前に気になる情報を短時間で隠します。</p>
             </div>
             <div class="detail-art detail-art-blue" aria-hidden="true">
               <div class="mini-ui mini-ui-grid">
@@ -152,8 +150,9 @@
           </article>
           <article class="detail-card detail-card-reverse">
             <div class="detail-copy">
-              <h3>端末内での処理を前提に設計</h3>
-              <p>写真の扱いに配慮しやすいよう、オンデバイスで完結する体験を目指して開発を進めています。</p>
+              <h3>オンデバイス処理</h3>
+              <p>あなたのスマホの中で処理が完結。大切な情報を外に出しません。
+              </p>
             </div>
             <div class="detail-art detail-art-pink" aria-hidden="true">
               <div class="mini-ui mini-ui-lock">
@@ -165,7 +164,7 @@
           <article class="detail-card">
             <div class="detail-copy">
               <h3>写真の雰囲気を残しやすいマスク表現</h3>
-              <p>ただ消すだけではなく、共有したときの見た目を損ねにくい、やわらかいマスクデザインを目指しています。</p>
+              <p>ただ消すだけではなく、シェアしたときの見た目を損ねにくい、やわらかいマスクデザインを目指しています。</p>
             </div>
             <div class="detail-art detail-art-yellow" aria-hidden="true">
               <div class="mini-ui mini-ui-masks">
@@ -184,9 +183,7 @@
           <h2>リリース準備中です</h2>
           <p>
             App Store 公開に向けて準備を進めています。公開時期や詳細情報は、このページで順次お知らせします。
-            お問い合わせは
-            <a href="mailto:hatchlabs.app+hidey@gmail.com">hatchlabs.app+hidey@gmail.com</a>
-            までお願いします。
+            ご意見やお問い合わせは、下のお問い合わせフォームからお送りいただけます。
           </p>
         </div>
       </section>
@@ -196,11 +193,66 @@
           <p class="eyebrow eyebrow-soft">Contact</p>
           <h2>お問い合わせ</h2>
         </div>
-        <p class="contact-copy">
-          Hidey に関するお問い合わせは、
-          <a href="mailto:hatchlabs.app+hidey@gmail.com">hatchlabs.app+hidey@gmail.com</a>
-          までお願いします。
-        </p>
+        <div class="contact-panel" data-contact-root data-email="hidey@hatchlaboratories.com">
+          <div class="contact-panel-copy">
+            <p class="contact-copy">
+              ご連絡内容に近い種別を選ぶと、件名と本文のひな形を自動で入れます。必要に応じて本文を編集してから送れます。
+            </p>
+            <p class="contact-meta">
+              送信先:
+              <a href="mailto:hidey@hatchlaboratories.com">hidey@hatchlaboratories.com</a>
+            </p>
+          </div>
+          <div class="contact-type-group" role="tablist" aria-label="お問い合わせ種別">
+            <button
+              class="contact-type-button is-active"
+              type="button"
+              data-contact-type="request"
+              aria-pressed="true"
+            >
+              要望
+            </button>
+            <button
+              class="contact-type-button"
+              type="button"
+              data-contact-type="other"
+              aria-pressed="false"
+            >
+              その他
+            </button>
+          </div>
+          <div class="contact-fields">
+            <label class="contact-field">
+              <span>件名</span>
+              <input class="contact-input" type="text" data-contact-subject readonly />
+            </label>
+            <label class="contact-field">
+              <span>本文</span>
+              <textarea class="contact-textarea" data-contact-body rows="8"></textarea>
+            </label>
+          </div>
+          <div class="contact-actions">
+            <a class="button button-primary-soft" href="#" data-contact-mailto>メールで開く</a>
+            <a class="button button-secondary-soft" href="#" target="_blank" rel="noreferrer" data-contact-gmail>
+              Gmailで開く
+            </a>
+            <a
+              class="contact-social-link"
+              href="https://x.com/Hidey524304"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Xで@Hidey524304を見る"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M18.9 2H22l-6.77 7.74L23 22h-6.1l-4.78-7.43L5.62 22H2.5l7.23-8.27L2 2h6.25l4.32 6.73L18.9 2Zm-1.07 18h1.69L7.33 3.9H5.52Z"
+                ></path>
+              </svg>
+              で問い合わせ
+            </a>
+          </div>
+          <p class="contact-status" data-contact-status aria-live="polite"></p>
+        </div>
       </section>
     </main>
 
@@ -212,6 +264,20 @@
       </div>
     </footer>
     <script>
+      (() => {
+        const scrollLinks = document.querySelectorAll("[data-scroll-link]");
+        scrollLinks.forEach((link) => {
+          link.addEventListener("click", (event) => {
+            const href = link.getAttribute("href");
+            if (!href || !href.startsWith("#")) return;
+            const target = document.querySelector(href);
+            if (!target) return;
+            event.preventDefault();
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+          });
+        });
+      })();
+
       (() => {
         const root = document.querySelector("[data-slider-root]");
         const slider = document.querySelector("[data-slider-hit]");
@@ -272,6 +338,81 @@
             setPosition(100);
           }
         });
+      })();
+
+      (() => {
+        const root = document.querySelector("[data-contact-root]");
+        if (!root) return;
+
+        const email = root.getAttribute("data-email") || "";
+        const subjectField = root.querySelector("[data-contact-subject]");
+        const bodyField = root.querySelector("[data-contact-body]");
+        const status = root.querySelector("[data-contact-status]");
+        const mailtoLink = root.querySelector("[data-contact-mailto]");
+        const gmailLink = root.querySelector("[data-contact-gmail]");
+        const typeButtons = Array.from(root.querySelectorAll("[data-contact-type]"));
+
+        const templates = {
+          request: {
+            subject: "Hideyへの要望",
+            body: [
+              "内容:",
+              "",
+              "その他のご意見:",
+              ""
+            ].join("\n")
+          },
+          other: {
+            subject: "Hideyについてのお問い合わせ",
+            body: [
+              "内容:",
+              "",
+              "返信が必要な場合は、このままお名前と返信先アドレスもご記載ください。",
+              "",
+              "お名前:",
+              "",
+              "ご連絡先:"
+            ].join("\n")
+          }
+        };
+
+        let currentType = "request";
+
+        const setStatus = (message) => {
+          if (!status) return;
+          status.textContent = message;
+        };
+
+        const updateLinks = () => {
+          const subject = subjectField.value;
+          const body = bodyField.value;
+          const mailto = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+          const gmail = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+          mailtoLink.setAttribute("href", mailto);
+          gmailLink.setAttribute("href", gmail);
+        };
+
+        const applyTemplate = (type) => {
+          currentType = type;
+          const template = templates[type];
+          subjectField.value = template.subject;
+          bodyField.value = template.body;
+          typeButtons.forEach((button) => {
+            const active = button.getAttribute("data-contact-type") === type;
+            button.classList.toggle("is-active", active);
+            button.setAttribute("aria-pressed", String(active));
+          });
+          updateLinks();
+          setStatus("");
+        };
+
+        typeButtons.forEach((button) => {
+          button.addEventListener("click", () => applyTemplate(button.getAttribute("data-contact-type")));
+        });
+
+        bodyField.addEventListener("input", updateLinks);
+
+        applyTemplate(currentType);
       })();
     </script>
   </body>

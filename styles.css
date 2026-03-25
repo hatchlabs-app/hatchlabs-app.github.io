@@ -216,7 +216,7 @@ a {
 
 .hero-points {
   display: grid;
-  gap: 10px;
+  gap: 12px;
   margin: 22px 0 0;
   padding: 0;
   list-style: none;
@@ -225,19 +225,34 @@ a {
 }
 
 .hero-points li {
-  position: relative;
-  padding-left: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  padding: 16px 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.58);
+  border: 1px solid rgba(179, 75, 125, 0.08);
+  box-shadow: 0 14px 32px rgba(22, 51, 91, 0.06);
 }
 
-.hero-points li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.62em;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #ff9dc9 0%, #ffd95a 100%);
+.hero-point-label {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 10px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(255, 157, 201, 0.22), rgba(144, 212, 245, 0.24));
+  color: #a33b72;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.hero-point-text {
+  display: block;
+  flex: 0 1 auto;
 }
 
 .button {
@@ -578,6 +593,11 @@ a {
   max-width: none;
 }
 
+.screen-after .screen-image-fallback {
+  left: calc(var(--slider-position, 52%) + 14px);
+}
+
+
 .screen-slider {
   position: absolute;
   inset: 0;
@@ -827,7 +847,7 @@ a {
 
 .detail-card {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-columns: 50% 50%;
   gap: 24px;
   align-items: center;
   padding: 24px;
@@ -838,7 +858,15 @@ a {
 }
 
 .detail-card-reverse {
-  grid-template-columns: 0.8fr 1.2fr;
+  grid-template-columns: 50% 50%;
+}
+
+.detail-card-reverse .detail-copy {
+  order: 2;
+}
+
+.detail-card-reverse .detail-art {
+  order: 1;
 }
 
 .detail-copy h3 {
@@ -854,9 +882,11 @@ a {
 
 .detail-art {
   position: relative;
+  width: calc(100% - 24px);
   min-height: 220px;
   border-radius: 24px;
   overflow: hidden;
+  justify-self: center;
 }
 
 .detail-art-blue {
@@ -879,7 +909,7 @@ a {
 
 .mini-ui {
   position: absolute;
-  inset: 20px;
+  inset: 28px;
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.55);
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -979,6 +1009,132 @@ a {
 .release-note h2 {
   margin: 12px 0;
   font-size: 1.6rem;
+}
+
+.contact-panel {
+  display: grid;
+  gap: 18px;
+  padding: 28px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(179, 75, 125, 0.1);
+  box-shadow: var(--shadow);
+}
+
+.contact-panel-copy {
+  display: grid;
+  gap: 8px;
+}
+
+.contact-meta {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.contact-type-group {
+  display: inline-flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.contact-type-button {
+  min-height: 42px;
+  padding: 0 16px;
+  border: 1px solid rgba(179, 75, 125, 0.14);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.76);
+  color: var(--navy);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.contact-type-button.is-active {
+  background: linear-gradient(135deg, rgba(255, 157, 201, 0.22), rgba(144, 212, 245, 0.24));
+  border-color: rgba(179, 75, 125, 0.2);
+}
+
+.contact-fields {
+  display: grid;
+  gap: 14px;
+}
+
+.contact-field {
+  display: grid;
+  gap: 8px;
+}
+
+.contact-field span {
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.contact-input,
+.contact-textarea {
+  width: 100%;
+  border: 1px solid rgba(179, 75, 125, 0.14);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--navy);
+  font: inherit;
+  line-height: 1.7;
+}
+
+.contact-input {
+  min-height: 50px;
+  padding: 0 16px;
+}
+
+.contact-textarea {
+  resize: vertical;
+  min-height: 180px;
+  padding: 14px 16px;
+}
+
+.contact-input[readonly] {
+  color: rgba(22, 51, 91, 0.86);
+}
+
+.contact-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contact-actions .button {
+  min-width: 150px;
+  min-height: 44px;
+  padding: 0 18px;
+}
+
+.contact-social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  min-width: 150px;
+  min-height: 44px;
+  padding: 0 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(22, 51, 91, 0.12);
+  background: rgba(255, 255, 255, 0.76);
+  color: var(--navy);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.contact-social-link svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.contact-status {
+  min-height: 1.5em;
+  margin: 0;
+  color: #a33b72;
+  font-weight: 700;
 }
 
 .tag-soft {
@@ -1126,6 +1282,7 @@ a {
   .feature-card,
   .scene-card,
   .release-note,
+  .contact-panel,
   .legal-copy {
     padding: 20px;
   }
