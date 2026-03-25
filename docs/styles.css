@@ -216,7 +216,7 @@ a {
 
 .hero-points {
   display: grid;
-  gap: 10px;
+  gap: 12px;
   margin: 22px 0 0;
   padding: 0;
   list-style: none;
@@ -225,19 +225,34 @@ a {
 }
 
 .hero-points li {
-  position: relative;
-  padding-left: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  padding: 16px 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.58);
+  border: 1px solid rgba(179, 75, 125, 0.08);
+  box-shadow: 0 14px 32px rgba(22, 51, 91, 0.06);
 }
 
-.hero-points li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.62em;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #ff9dc9 0%, #ffd95a 100%);
+.hero-point-label {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 10px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(255, 157, 201, 0.22), rgba(144, 212, 245, 0.24));
+  color: #a33b72;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.hero-point-text {
+  display: block;
+  flex: 0 1 auto;
 }
 
 .button {
