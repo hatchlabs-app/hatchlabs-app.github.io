@@ -1019,6 +1019,132 @@ a {
   flex-wrap: wrap;
 }
 
+.contact-panel {
+  display: grid;
+  gap: 18px;
+  padding: 28px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(179, 75, 125, 0.1);
+  box-shadow: var(--shadow);
+}
+
+.contact-panel-copy {
+  display: grid;
+  gap: 8px;
+}
+
+.contact-meta {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.contact-type-group {
+  display: inline-flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.contact-type-button {
+  min-height: 42px;
+  padding: 0 16px;
+  border: 1px solid rgba(179, 75, 125, 0.14);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.76);
+  color: var(--navy);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.contact-type-button.is-active {
+  background: linear-gradient(135deg, rgba(255, 157, 201, 0.22), rgba(144, 212, 245, 0.24));
+  border-color: rgba(179, 75, 125, 0.2);
+}
+
+.contact-fields {
+  display: grid;
+  gap: 14px;
+}
+
+.contact-field {
+  display: grid;
+  gap: 8px;
+}
+
+.contact-field span {
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.contact-input,
+.contact-textarea {
+  width: 100%;
+  border: 1px solid rgba(179, 75, 125, 0.14);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--navy);
+  font: inherit;
+  line-height: 1.7;
+}
+
+.contact-input {
+  min-height: 50px;
+  padding: 0 16px;
+}
+
+.contact-textarea {
+  resize: vertical;
+  min-height: 180px;
+  padding: 14px 16px;
+}
+
+.contact-input[readonly] {
+  color: rgba(22, 51, 91, 0.86);
+}
+
+.contact-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contact-actions .button {
+  min-width: 150px;
+  min-height: 44px;
+  padding: 0 18px;
+}
+
+.contact-social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  min-width: 150px;
+  min-height: 44px;
+  padding: 0 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(22, 51, 91, 0.12);
+  background: rgba(255, 255, 255, 0.76);
+  color: var(--navy);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.contact-social-link svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.contact-status {
+  min-height: 1.5em;
+  margin: 0;
+  color: #a33b72;
+  font-weight: 700;
+}
+
 .legal-page {
   padding: 10px 0 40px;
 }
