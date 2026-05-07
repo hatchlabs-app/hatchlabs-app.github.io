@@ -999,10 +999,10 @@ a {
 
 .release-icon {
   display: block;
-  width: 56px;
-  height: 56px;
-  margin-bottom: 12px;
-  border-radius: 14px;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 10px;
+  border-radius: 12px;
 }
 
 .release-note h2 {
