@@ -997,6 +997,14 @@ a {
   padding: 28px;
 }
 
+.release-icon {
+  display: block;
+  width: 56px;
+  height: 56px;
+  margin-bottom: 12px;
+  border-radius: 14px;
+}
+
 .release-note h2 {
   margin: 12px 0;
   font-size: 1.6rem;
